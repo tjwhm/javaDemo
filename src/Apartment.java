@@ -10,6 +10,8 @@ public class Apartment {
     public int size;
     public int floor;
     public Decoration decoration;
+    public City city;
+    public Location location;
 
     public Apartment(){
 
@@ -41,4 +43,5 @@ public class Apartment {
             System.out.println("Your apartment's decoration is already the best!");
         }
     }
+
 }
