@@ -17,5 +17,13 @@ public class Main {
         System.out.println("I have a " + ap_size + " square metres " + ap_decoration +
                 " decorated house on the " + ap_floor + " floor.");
 
+
+        Villa villa = new Villa(260);
+
+        villa.updateDecoration();
+
+        String vi_size = String.valueOf(villa.getSize());
+
+        System.out.println("Now I have a " + vi_size + " square metres luxury villa!");
     }
 }

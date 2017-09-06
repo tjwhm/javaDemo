@@ -7,10 +7,13 @@
 public class Apartment {
 
 
-    private int size;
-    private int floor;
-    private Decoration decoration;
+    public int size;
+    public int floor;
+    public Decoration decoration;
 
+    public Apartment(){
+
+    }
     public Apartment(int size, int floor, Decoration decoration) {
         this.size = size;
         this.floor = floor;
