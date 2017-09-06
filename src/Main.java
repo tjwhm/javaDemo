@@ -10,20 +10,22 @@ public class Main {
 
         apartment.updateDecoration();
 
-        String ap_size = String.valueOf(apartment.getSize());
-        String ap_floor = String.valueOf(apartment.getFloor());
-        String ap_decoration = apartment.getDecoration().toString().toLowerCase();
+        int apartmentSize = apartment.getSize();
+        int apartmentFloor = apartment.getFloor();
+        Decoration apartmentDecoration = apartment.getDecoration();
 
-        System.out.println("I have a " + ap_size + " square metres " + ap_decoration +
-                " decorated house on the " + ap_floor + " floor.");
+        String strApartmentDecoration = apartmentDecoration.toString().toLowerCase();
+
+        System.out.println("I have a " + apartmentSize + " square metres " + apartmentFloor +
+                " decorated house on the " + strApartmentDecoration + " floor.");
 
 
         Villa villa = new Villa(260);
 
         villa.updateDecoration();
 
-        String vi_size = String.valueOf(villa.getSize());
+        int villaSize = villa.getSize();
 
-        System.out.println("Now I have a " + vi_size + " square metres luxury villa!");
+        System.out.println("Now I have a " + villaSize + " square metres luxury villa!");
     }
 }
