@@ -10,14 +10,14 @@ public class Main {
 
         apartment.updateDecoration();
 
-        int ap_size = apartment.getSize();
-        int ap_floor = apartment.getFloor();
-        Decoration ap_decoration = apartment.getDecoration();
+        int apartmentSize = apartment.getSize();
+        int apartmentFloor = apartment.getFloor();
+        Decoration apartmentDecoration = apartment.getDecoration();
 
-        String str_ap_decoration = ap_decoration.toString().toLowerCase();
+        String strApartmentDecoration = apartmentDecoration.toString().toLowerCase();
 
-        System.out.println("I have a " + ap_size + " square metres " + str_ap_decoration +
-                " decorated house on the " + ap_floor + " floor.");
+        System.out.println("I have a " + apartmentSize + " square metres " + apartmentFloor +
+                " decorated house on the " + strApartmentDecoration + " floor.");
 
     }
 }
