@@ -3,7 +3,7 @@
  * Happy coding !
  **/
 public class ApartmentBuilder {
-    Apartment apartment = new Apartment();
+    private Apartment apartment = new Apartment();
 
     ApartmentBuilder size(int size) {
         apartment.size = size;
