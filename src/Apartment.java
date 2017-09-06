@@ -7,11 +7,11 @@
 public class Apartment {
 
 
-    public int size;
-    public int floor;
-    public Decoration decoration;
+    protected int size;
+    protected int floor;
+    protected Decoration decoration;
 
-    public Apartment(){
+    protected Apartment(){
 
     }
     public Apartment(int size, int floor, Decoration decoration) {
