@@ -6,7 +6,6 @@
 
 public class Apartment {
 
-
     private int size;
     private int floor;
     private Decoration decoration;

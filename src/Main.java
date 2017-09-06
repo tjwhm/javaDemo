@@ -10,11 +10,13 @@ public class Main {
 
         apartment.updateDecoration();
 
-        String ap_size = String.valueOf(apartment.getSize());
-        String ap_floor = String.valueOf(apartment.getFloor());
-        String ap_decoration = apartment.getDecoration().toString().toLowerCase();
+        int ap_size = apartment.getSize();
+        int ap_floor = apartment.getFloor();
+        Decoration ap_decoration = apartment.getDecoration();
 
-        System.out.println("I have a " + ap_size + " square metres " + ap_decoration +
+        String str_ap_decoration = ap_decoration.toString().toLowerCase();
+
+        System.out.println("I have a " + ap_size + " square metres " + str_ap_decoration +
                 " decorated house on the " + ap_floor + " floor.");
 
     }
