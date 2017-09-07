@@ -18,4 +18,9 @@ public class Villa extends Apartment {
     public void updateDecoration() {
         System.out.println("Come on! Give us a break!");
     }
+
+    @Override
+    public int getSize() {
+        return super.getSize();
+    }
 }
