@@ -6,18 +6,21 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Apartment apartment = new Apartment(200, 3, Decoration.SIMPLE);
+        Apartment a1 = new Apartment(200);
+        a1.getSize();
+        a1.getSize();
 
-        apartment.updateDecoration();
+        System.out.println(a1.totalViewer);
+        System.out.println(Apartment.totalViewer);
+        System.out.println(a1.getTotalViewer());
+        System.out.println(Apartment.getTotalViewer());
 
-        int apartmentSize = apartment.getSize();
-        int apartmentFloor = apartment.getFloor();
-        Decoration apartmentDecoration = apartment.getDecoration();
-
-        String strApartmentDecoration = apartmentDecoration.toString().toLowerCase();
-
-        System.out.println("I have a " + apartmentSize + " square metres " + apartmentFloor +
-                " decorated house on the " + strApartmentDecoration + " floor.");
-
+        Apartment a2 = new Apartment(300);
+        a2.getSize();
+        a2.getSize();
+        System.out.println(a2.totalViewer);
+        System.out.println(Apartment.totalViewer);
+        System.out.println(a2.getTotalViewer());
+        System.out.println(Apartment.getTotalViewer());
     }
 }

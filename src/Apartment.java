@@ -7,34 +7,18 @@
 public class Apartment {
 
     private int size;
-    private int floor;
-    private Decoration decoration;
+    public static int totalViewer = 0;
 
-    public Apartment(int size, int floor, Decoration decoration) {
+    public Apartment(int size) {
         this.size = size;
-        this.floor = floor;
-        this.decoration = decoration;
     }
 
     public int getSize() {
+        ++totalViewer;
         return size;
     }
 
-    public int getFloor() {
-        return floor;
-    }
-
-    public Decoration getDecoration() {
-        return decoration;
-    }
-
-    public void updateDecoration() {
-        if (this.decoration == Decoration.NULL) {
-            this.decoration = Decoration.SIMPLE;
-        } else if (this.decoration == Decoration.SIMPLE) {
-            this.decoration = Decoration.LUXURY;
-        } else {
-            System.out.println("Your apartment's decoration is already the best!");
-        }
+    public static int getTotalViewer() {
+        return totalViewer;
     }
 }
