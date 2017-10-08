@@ -6,7 +6,24 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Apartment apartment = new Apartment(300);
-        Apartment.Location location = apartment.new Location(City.BEIJING,"Chang'An",305,3,true);
+        Horse horse = new Horse();
+        System.out.println("I have a horse, it has"
+                + String.valueOf(horse.getFeetQuantity())
+                + " feet.");
+
+        Animal animal = new Animal() {
+            @Override
+            boolean hasSpine() {
+                return true;
+            }
+
+            @Override
+            int getFeetQuantity() {
+                return 4;
+            }
+        };
+        System.out.println("I have a horse, it has"
+                + String.valueOf(animal.getFeetQuantity())
+                + " feet.");
     }
 }
